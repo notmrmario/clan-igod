@@ -2,21 +2,155 @@
 <html lang="es">
 <title>Clan Inks iGod - Inicio</title>
 
-<body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div>
-        <center>
-            <div>
-                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; background-color: #1a1a1a;">Bienvenido al Clan Inks iGod</p>
-            </div>
-        </center>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        .center {
+            margin: auto;
+            width: 100%;
+            padding: auto;
+            background-color: #000000;
+        }
+
+        .rectangle {
+            height: 5px;
+            width: 100%;
+            background: #000000;
+        }
+
+        .rectangle-footer {
+            height: 150px;
+            width: 100%;
+            background-color: #000000;
+        }
+    </style>
+    <style type="text/css">
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+
+        #header {
+            margin: 0px;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+        }
+
+        .nav li a:hover {
+            background-color: #434343a2;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+    <style>
+        .elemento-scroll {
+            position: fixed;
+            width: 100px;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    </style>
+    <style>
+        .button-invite {
+            margin: auto;
+            border: 5px solid #505050;
+            padding: 10px;
+            background-color: #00000000;
+        }
+    </style>
+    <div id="header">
+        <ul class="nav">
+            <li class="elemento-scroll"><a draggable="true">Funciones</a>
+                <ul>
+                    <li><a href="">Recargar página</a>
+                    <li><a draggable="true" onclick="openWindow('xd')">Abrir ventana</a>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <div>
-        <center>
-            <iframe src="https://discord.com/widget?id=654791980718620702&theme=dark" width="1000" height="700"
-                allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </center>
-    </div>  
+    <div class="center"
+        style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align:center">
+        <div class="rectangle"></div>
+        <p style="color:rgb(255, 255, 255)" draggable="true">Bienvenido al Clan Inks iGod</p>
+        <div class="rectangle"></div>
+    </div>
+</head>
+
+<body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <br>
+    <br>
+    <br>
+    <center>
+        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style: inherit; font-size: 1.5cm;" draggable="true">Haga click en "Connect" para unirse al servidor de Discord</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a onclick="openWindowInvite()">
+            <button type="button" class="button-invite" style="font-size: 1.5cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-variant: small-caps;">Unirse al server</button>
+        </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+            function openWindow(text) {
+                var windoww = window.open('', 'MsgWindow', 'width=500,height=250')
+                windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+            }
+
+            function openWindowInvite() {
+                var windoww = window.open('https://discord.com/invite/d4j5KEm')
+            }
+
+        </script>
+    </center>
+    </div>
 </body>
+
+<footer>
+    <div class="rectangle-footer">
+        <p style="font-size: 50px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
+        <p style="font-size: 1.25cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #ffffff; text-align: center;">Discord: Mr. Mario#8498</p>
+    </div>
+</footer>
 
 </html>
