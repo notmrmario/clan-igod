@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Clan Inks iGod - Servidor de Minecraft</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        .center {
+            margin: auto;
+            width: 100%;
+            padding: auto;
+            background-color: #000000;
+        }
+
+        .rectangle {
+            height: 5px;
+            width: 100%;
+            background-color: #000000;
+        }
+
+        .rectangle-footer {
+            height: 150px;
+            width: 100%;
+            background-color: #000000;
+        }
+    </style>
+    <style type="text/css">
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+
+        #header {
+            margin: 0px;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+        }
+
+        .nav li a:hover {
+            background-color: #434343a2;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+    <style>
+        .elemento-scroll {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    </style>
+    <style>
+        .button-invite {
+            margin: auto;
+            border: 5px solid #505050;
+            padding: 10px;
+            background-color: #00000000;
+        }
+    </style>
+    <style>
+        .panel-about {
+            font-size: 1.25cm;
+            color: #00000099;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+        <div id="header">
+            <ul class="nav">
+                <li><a draggable="true">Funciones</a>
+                    <ul>
+                        <li><a href="">Recargar página</a>
+                        <li><a draggable="true" onclick="openWindowText('Esto no sé para qué está la verdad :/')">Abrir ventana</a>
+                    </ul>
+                <li><a href="index.html" draggable="false">Inicio</a>
+                    <li><a href="server-mc.html" draggable="false">Servidor de Minecraft</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            function openWindow(text) {
+                var windoww = window.open('', 'MsgWindow', 'width=500,height=250')
+                windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+            }
+        </script>
+        <div class="center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align:center">
+            <div class="rectangle"></div>
+            <p style="color:rgb(255, 255, 255); text-align: center;" draggable="true">Servidor de Minecarft</p>
+            <div class="rectangle"></div>
+        </div>
+</head>
+
+<body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="panel-about">
+            En este clan puedes tener amigos con los que jugar una gran variedad de juegos con los integrantes del mismo sin ningún
+            problema. Aquí tienes una lista de todos los juegos que jugamos:
+        </p>
+        <p class="panel-about">- Fortnite</p>
+        <p class="panel-about">- Minecraft (ambos Java y Bedrock)</p>
+        <p class="panel-about">- Rocket League</p>
+        <p class="panel-about">- Gran Turismo</p>
+        <p class="panel-about">- Call of Duty</p>
+        <p class="panel-about">- Splatoon 2</p>
+        <p class="panel-about">- Mario Kart</p>
+        <p class="panel-about">- Arms</p>
+        <p class="panel-about">
+            Si quieres entrar abajo del todo tienes métodos de contactar con el Co-Líder del Clan si te interesa entrar
+        </p>
+    </div>
+    <script>
+        function openWindowText(text) {
+                var windoww = window.open(``, `Ventana`, `height: 50px; width: 40px`)
+                windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+            }
+
+            function openWindowCustom(url, name, config) {
+                var windoww = window.open(`${url}`, `${name}`, `${config}`)
+            }
+    </script>
+</body>
+
+<footer>
+    <div class="rectangle-footer">
+        <p style="font-size: 1.25cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
+        <p style="font-size: 1.25cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #ffffff; text-align: center;">Discord: Mr. Mario#8498</p>
+    </div>
+</footer>

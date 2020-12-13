@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
-<title>Clan Inks iGod - Inicio</title>
+<meta http-equiv="Content-Type" content="text/html; charset:utf-8" />
+
+<html
+    style="background-image: url('mc background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+<title>Clan Inks iGod - Servidor de Minecraft</title>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -87,9 +90,17 @@
     <style>
         .button-invite {
             margin: auto;
-            border: 5px solid #000000;
+            border: 5px solid #505050;
             padding: 10px;
             background-color: #00000000;
+        }
+    </style>
+    <style>
+        .panel-about {
+            font-size: 1.25cm;
+            color: #00000099;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
     </style>
     <div id="header">
@@ -97,65 +108,68 @@
             <li><a draggable="true">Funciones</a>
                 <ul>
                     <li><a href="">Recargar página</a>
-                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
+                    <li><a draggable="true" onclick="openWindowText('xd')">Abrir ventana</a>
                 </ul>
-            <li><a href="about.html">Acerca de</a>
-            <li><a href="server-mc.html">Servidor de Minecraft</a>
+            <li><a href="index.html" draggable="false">Inicio</a>
+            <li><a href="about.html" draggable="false">Acerca de</a>
             </li>
         </ul>
     </div>
+    <script>
+        function openWindow(text) {
+            var windoww = window.open('', 'MsgWindow', 'width=500,height=250')
+            windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+        }
+    </script>
     <div class="center"
         style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align:center">
         <div class="rectangle"></div>
-        <p style="color:rgb(255, 255, 255)" draggable="true">Bienvenido al Clan Inks iGod</p>
+        <p style="color:rgb(255, 255, 255); text-align: center;" draggable="true">Acerca de este Clan</p>
         <div class="rectangle"></div>
     </div>
 </head>
 
-<body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+<body>
     <br>
     <br>
     <br>
-    <center>
-        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style: inherit; font-size: 1.5cm;" draggable="true">Haga click en "Connect" para unirse al servidor de Discord</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a onclick="openWindowCustom('https:/\/discord.com/invite/d4j5KEm', 'Invitación', 'height: 100px; width: 50px;')">
-            <button type="button" class="button-invite" style="font-size: 1.5cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-variant: small-caps; outline: unset; border-radius: 25px;">Unirse al server</button>
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <script>
-            function openWindowText(text) {
-                var windoww = window.open(``, `Ventana`, `height: 50px; width: 40px`)
-                windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="width: 60%; height: 0.5cm; background-color: rgb(49, 49, 49); color: white; font-family: Arial; border-top-left-radius: 0.25cm; border-top-right-radius: 0.25cm;"></div>
+    <div style="width: 60%; height: 30%; background-color: rgb(49, 49, 49); color: white; font-family: Arial;">
+        <style>
+            .server-info {
+                text-align: center;
+                font-size: 1.5cm;
             }
-
-            function openWindowCustom(url, name, config) {
-                var windoww = window.open(`${url}`, `${name}`, `${config}`)
+            .bold-info {
+                text-align: center;
+                font-size: 1.5cm;
+                font-family: Impact;
             }
-
-        </script>
-    </center>
+        </style>
+        <p class="server-info"><b class="bold-info" draggable="true">Ip:</b> notmrmario.aternos.me</p>
+        <p class="server-info"><b class="bold-info" draggable="true">Versión:</b> 1.16.4 Vanilla</p>
+        <p class="server-info"><b class="bold-info" draggable="true">Tipo:</b> Java</p>
+        <p class="server-info"><b class="bold-info" draggable="true">Máximo de jugadores:</b> 100</p>
     </div>
+    <div style="width: 60%; height: 0.5cm; background-color: rgb(49, 49, 49); color: white; font-family: Arial; border-bottom-left-radius: 0.25cm; border-bottom-right-radius: 0.25cm;"></div>
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    
 </body>
 
-<footer class="elemento-scroll">
+<footer>
     <div class="rectangle-footer">
         <p style="font-size: 1cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
         <p style="font-size: 1cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #ffffff; text-align: center;">Discord: Mr. Mario#8498</p>
     </div>
 </footer>
-
-</html>
