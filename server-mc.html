@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset:utf-8" />
 
 <html
-    style="background-image: url('mc background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    style="background-image: url('imgs/mc\ background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 <title>Clan Inks iGod - Servidor de Minecraft</title>
 
 <head>
@@ -117,14 +117,14 @@
     </div>
     <script>
         function openWindow(text) {
-            var windoww = window.open('', 'MsgWindow', 'width=500,height=250')
+            var windoww = window.open('', 'MsgWindow', 'width=10,height=10')
             windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
         }
     </script>
     <div class="center"
         style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align:center">
         <div class="rectangle"></div>
-        <p style="color:rgb(255, 255, 255); text-align: center;" draggable="true">Acerca de este Clan</p>
+        <p style="color:rgb(255, 255, 255); text-align: center;" draggable="true">Servidor de Minecraft</p>
         <div class="rectangle"></div>
     </div>
 </head>
@@ -153,9 +153,16 @@
             }
         </style>
         <p class="server-info"><b class="bold-info" draggable="true">Ip:</b> notmrmario.aternos.me</p>
+        <br>
         <p class="server-info"><b class="bold-info" draggable="true">Versión:</b> 1.16.4 Vanilla</p>
+        <br>
         <p class="server-info"><b class="bold-info" draggable="true">Tipo:</b> Java</p>
-        <p class="server-info"><b class="bold-info" draggable="true">Máximo de jugadores:</b> 100</p>
+        <br>
+        <p class="bold-info"><b>Estado:</b></p><p class="server-info" id=stus></p>
+        <br>
+        <p class="bold-info"><b>Número de jugadores:</b></p><p class="server-info" id=nply></p>
+        <br>
+        <script src="js/server-fetch.js"></script>
     </div>
     <div style="width: 60%; height: 0.5cm; background-color: rgb(49, 49, 49); color: white; font-family: Arial; border-bottom-left-radius: 0.25cm; border-bottom-right-radius: 0.25cm;"></div>
     <br>
@@ -164,7 +171,16 @@
     <br>
     <br>
     <br>
-    
+    <script>
+        function openWindowText(text) {
+            var windoww = window.open(``, `Ventana`, `height: 50px; width: 40px`)
+            windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+        }
+        
+        function openWindowCustom(url, name, config) {
+            var windoww = window.open(`${url}`, `${name}`, `${config}`)
+        }
+    </script>
 </body>
 
 <footer>

@@ -112,7 +112,7 @@
     </div>
 </head>
 
-<body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
     <br>
     <br>
     <br>
@@ -123,7 +123,7 @@
         <br>
         <br>
         <br>
-        <a onclick="openWindowCustom('https:/\/discord.com/invite/d4j5KEm', 'Invitación', 'height: 100px; width: 50px;')">
+        <a onclick="openWindowCustom('https:/\/discord.com/invite/WTMTQgmXg6', 'Invitación', 'height: 150px; width: 150px;')">
             <button type="button" class="button-invite" style="font-size: 1.5cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-variant: small-caps; outline: unset; border-radius: 25px;">Unirse al server</button>
         </a>
         <br>
@@ -136,11 +136,11 @@
         <script>
             function openWindowText(text) {
                 var windoww = window.open(``, `Ventana`, `height: 50px; width: 40px`)
-                windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+                windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
             }
 
             function openWindowCustom(url, name, config) {
-                var windoww = window.open(`${url}`, `${name}`, `${config}`)
+                var windoww = window.open(`${url}`, `${name}`, `${config}`, true)
             }
 
         </script>
