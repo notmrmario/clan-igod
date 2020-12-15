@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-<title>Clan Inks iGod - Servidor de Minecraft</title>
+<title>Clan Inks iGod - Acerca de</title>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,9 +18,17 @@
         }
 
         .rectangle-footer {
-            height: 150px;
+            height: 125px;
             width: 100%;
             background-color: #000000;
+        }
+        @font-face {
+            font-family: "Console";
+            src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+        }
+        @font-face {
+            font-family: "Mojangles";
+            src: url('custom-fonts/minecraft.ttf');
         }
     </style>
     <style type="text/css">
@@ -95,7 +102,7 @@
     <style>
         .panel-about {
             font-size: 1.25cm;
-            color: #00000099;
+            color: #000000a9;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
@@ -120,7 +127,7 @@
         </script>
         <div class="center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align:center">
             <div class="rectangle"></div>
-            <p style="color:rgb(255, 255, 255); text-align: center;" draggable="true">Servidor de Minecarft</p>
+            <p style="color:rgb(255, 255, 255); text-align: center; font-family: Console;" draggable="true">Acerca de este Clan</p>
             <div class="rectangle"></div>
         </div>
 </head>
@@ -131,25 +138,25 @@
         <br>
         <br>
         <br>
-        <p class="panel-about">
+        <p class="panel-about" style="font-family: Impact;">
             En este clan puedes tener amigos con los que jugar una gran variedad de juegos con los integrantes del mismo sin ningún
             problema. Aquí tienes una lista de todos los juegos que jugamos:
         </p>
-        <p class="panel-about">- Fortnite</p>
-        <p class="panel-about">- Minecraft (ambos Java y Bedrock)</p>
-        <p class="panel-about">- Rocket League</p>
-        <p class="panel-about">- Gran Turismo</p>
-        <p class="panel-about">- Call of Duty</p>
-        <p class="panel-about">- Splatoon 2</p>
-        <p class="panel-about">- Mario Kart</p>
-        <p class="panel-about">- Arms</p>
-        <p class="panel-about">
+        <p class="panel-about" style="font-family: Impact;">- Fortnite</p>
+        <p class="panel-about" style="font-family: Impact;">- Minecraft (ambos Java y Bedrock)</p>
+        <p class="panel-about" style="font-family: Impact;">- Rocket League</p>
+        <p class="panel-about" style="font-family: Impact;">- Gran Turismo</p>
+        <p class="panel-about" style="font-family: Impact;">- Call of Duty</p>
+        <p class="panel-about" style="font-family: Impact;">- Splatoon 2</p>
+        <p class="panel-about" style="font-family: Impact;">- Mario Kart</p>
+        <p class="panel-about" style="font-family: Impact;">- Arms</p>
+        <p class="panel-about" style="font-family: Impact;">
             Si quieres entrar abajo del todo tienes métodos de contactar con el Co-Líder del Clan si te interesa entrar
         </p>
     </div>
     <script>
         function openWindowText(text) {
-                var windoww = window.open(``, `Ventana`, `height: 50px; width: 40px`)
+                var windoww = window.open(``, `Ventana`, `height=50px, width=40px`)
                 windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
             }
 
@@ -161,7 +168,7 @@
 
 <footer>
     <div class="rectangle-footer">
-        <p style="font-size: 1.25cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
-        <p style="font-size: 1.25cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #ffffff; text-align: center;">Discord: Mr. Mario#8498</p>
+        <p style="font-size: 1.25cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
+        <p style="font-size: 1.25cm; font-family: Console; color: #ffffff; text-align: center;"><b>Discord:</b> Mr. Mario#8498</p>
     </div>
 </footer>

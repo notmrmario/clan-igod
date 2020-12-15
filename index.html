@@ -23,6 +23,14 @@
             width: 100%;
             background-color: #000000;
         }
+        @font-face {
+            font-family: "Console";
+            src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+        }
+        @font-face {
+            font-family: "Mojangles";
+            src: url('custom-fonts/minecraft.ttf');
+        }
     </style>
     <style type="text/css">
         * {
@@ -105,7 +113,7 @@
         </ul>
     </div>
     <div class="center"
-        style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align:center">
+        style="font-family: Console; font-size: 1.75cm; text-align:center">
         <div class="rectangle"></div>
         <p style="color:rgb(255, 255, 255)" draggable="true">Bienvenido al Clan Inks iGod</p>
         <div class="rectangle"></div>
@@ -117,16 +125,16 @@
     <br>
     <br>
     <center>
-        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style: inherit; font-size: 1.5cm;" draggable="true">Pulsa el botón para acceder al servidor de Discord</p>
+        <p style="font-family: Console; font-style: inherit; font-size: 1.5cm;" draggable="true">Pulsa el botón para acceder al servidor de Discord</p>
         <br>
-        <b style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style: inherit; font-size: 1.5cm;">ADVERTENCIA</b>
-        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style: inherit; font-size: 1.5cm;">Si te unes al servidor sin haber sido admitido serás baneado permanentemente de este mismo</p>
-        <br>
-        <br>
+        <b style="font-family: Console; font-style: inherit; font-size: 1.5cm;">ADVERTENCIA</b>
+        <p style="font-family: Console; font-style: inherit; font-size: 1.5cm;">Si te unes al servidor sin haber sido admitido serás baneado permanentemente de este mismo</p>
         <br>
         <br>
-        <a onclick="openWindowCustom('https:/\/discord.com/invite/WTMTQgmXg6', 'Invitación', 'height: 150px; width: 150px;')">
-            <button type="button" class="button-invite" style="font-size: 1.5cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-variant: small-caps; outline: unset; border-radius: 25px;">Unirse al server</button>
+        <br>
+        <br>
+        <a onclick="openWindowCustom('https:/\/discord.com/invite/WTMTQgmXg6', 'Invitación', 'width=500px,height=800')">
+            <button type="button" class="button-invite" style="font-size: 1.5cm; font-family: Console; outline: unset; border-radius: 25px;">Unirse al server</button>
         </a>
         <br>
         <br>
@@ -137,7 +145,7 @@
         <br>
         <script>
             function openWindowText(text) {
-                var windoww = window.open(``, `Ventana`, `height: 50px; width: 40px`)
+                var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
                 windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
             }
 
@@ -153,10 +161,10 @@
     <br>
 </body>
 
-<footer class="elemento-scroll">
+<footer>
     <div class="rectangle-footer">
-        <p style="font-size: 1cm; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
-        <p style="font-size: 1cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #ffffff; text-align: center;">Discord: Mr. Mario#8498</p>
+        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);;" draggable="true">Contacto</p>
+        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b>Discord:</b> Mr. Mario#8498</p>
     </div>
 </footer>
 
