@@ -12,6 +12,8 @@
             width: 100%;
             padding: auto;
             background-color: #000000;
+            min-height: 2.5cm;
+            text-align: center 
         }
 
         .rectangle {
@@ -22,7 +24,7 @@
 
         .rectangle-footer {
             min-height: 115px;
-            width: 100.01%;
+            width: 100%;
             background-color: #000000;
         }
         @font-face {
@@ -43,7 +45,8 @@
         #header {
             margin: 0px;
             width: 500px;
-            font-family: Arial, Helvetica, sans-serif
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: center
         }
 
         ul,
@@ -61,6 +64,7 @@
             text-decoration: none;
             padding: 10px 12px;
             display: block;
+            transition: linear 0.25s;
         }
 
         .nav li a:hover {
@@ -97,12 +101,10 @@
     <style>
         .button-invite {
             margin: auto;
-            border: 5px solid #505050;
+            border: 5px solid #000000;
             padding: 10px;
             background-color: #00000000;
         }
-    </style>
-    <style>
         .panel-about {
             font-size: 1.25cm;
             color: #00000099;
@@ -110,32 +112,26 @@
             text-align: center;
         }
     </style>
-    <div id="header">
+    
+    <div class="center" style="font-family: Mojangles; font-size: 1.75cm; text-align: center;">
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Servidor de Minecraft</p>
+    </div>
+</head>
+<body style="background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;font-family: Mojangles;">
         <ul class="nav">
             <li><a draggable="true">Funciones</a>
                 <ul>
                     <li><a href="">Recargar página</a>
-                    <li><a draggable="true" onclick="openWindowText('xd')">Abrir ventana</a>
+                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
                 </ul>
-            <li><a href="index.html" draggable="false">Inicio</a>
-            <li><a href="about.html" draggable="false">Acerca de</a>
+            <li><a href="about.html">Acerca de</a>
+            <li><a href="server-mc.html">Servidor de Minecraft</a>
+            <li><a href="id-info.html">IDs de juegos
+            </a>
             </li>
         </ul>
     </div>
-    <script>
-        function openWindow(text) {
-            var windoww = window.open('', 'MsgWindow', 'width=10,height=10')
-            windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
-        }
-    </script>
-    <div class="center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.75cm; text-align: center;">
-        <div class="rectangle"></div>
-        <p style="color:rgb(255, 255, 255); text-align: center; font-family: Mojangles;" draggable="true">Servidor de Minecraft</p>
-        <div class="rectangle"></div>
-    </div>
-</head>
-
-<body>
     <br>
     <br>
     <br>
@@ -202,8 +198,8 @@
 
 <footer>
     <div class="rectangle-footer">
-        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
-        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498 <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false"></p>
+        <p style="font-size: 1cm; font-family: Mojangles; text-align: center; color: rgb(255, 255, 255);" draggable="true"><b>Contacto</b></p>
+        <p style="font-size: 1cm; font-family: Mojangles; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498 <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false"></p>
         <br>
     </div>
 </footer>

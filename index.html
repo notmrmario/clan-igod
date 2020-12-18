@@ -10,6 +10,8 @@
             width: 100%;
             padding: auto;
             background-color: #000000;
+            min-height: 2.5cm;
+            text-align: center 
         }
 
         .rectangle {
@@ -41,7 +43,8 @@
         #header {
             margin: 0px;
             width: 500px;
-            font-family: Arial, Helvetica, sans-serif
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: center
         }
 
         ul,
@@ -59,6 +62,7 @@
             text-decoration: none;
             padding: 10px 12px;
             display: block;
+            transition: linear 0.25s;
         }
 
         .nav li a:hover {
@@ -100,7 +104,13 @@
             background-color: #00000000;
         }
     </style>
-    <div id="header">
+    
+    <div class="center" style="font-family: Console; font-size: 1.75cm; text-align: center;">
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Bienvenido al Clan Inks iGod</p>
+    </div>
+</head>
+<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;">
         <ul class="nav">
             <li><a draggable="true">Funciones</a>
                 <ul>
@@ -109,18 +119,11 @@
                 </ul>
             <li><a href="about.html">Acerca de</a>
             <li><a href="server-mc.html">Servidor de Minecraft</a>
+            <li><a href="id-info.html">IDs de juegos
+            </a>
             </li>
         </ul>
     </div>
-    <div class="center"
-        style="font-family: Console; font-size: 1.75cm; text-align:center">
-        <div class="rectangle"></div>
-        <p style="color:rgb(255, 255, 255)" draggable="true">Bienvenido al Clan Inks iGod</p>
-        <div class="rectangle"></div>
-    </div>
-</head>
-
-<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
     <br>
     <br>
     <br>
