@@ -11,7 +11,7 @@
             padding: auto;
             background-color: #000000;
             min-height: 2.5cm;
-            text-align: center 
+            text-align: center
         }
 
         .rectangle {
@@ -25,10 +25,12 @@
             width: 100%;
             background-color: #000000;
         }
+
         @font-face {
             font-family: "Console";
             src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
         }
+
         @font-face {
             font-family: "Mojangles";
             src: url('custom-fonts/minecraft.ttf');
@@ -99,82 +101,63 @@
     <style>
         .button-invite {
             margin: auto;
-            border: 5px solid #000000;
+            border: 3px solid #000000;
+            border-radius: 25px;
             padding: 10px;
             background-color: #00000000;
+            align-self: center;
+            outline: unset;
+            font-size: 1.25cm;
+            font-family: Console;
+            transition: linear 0.25s
+        }
+        .button-invite:hover {
+            background-color: #000000;
+            color: white
         }
     </style>
-    
+
     <div class="center" style="font-family: Console; font-size: 1.75cm; text-align: center;">
-        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Bienvenido al Clan Inks iGod</p>
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Bienvenido al Clan
+            Inks iGod</p>
     </div>
 </head>
+
 <body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;">
-        <ul class="nav">
-            <li><a draggable="true">Funciones</a>
-                <ul>
-                    <li><a href="">Recargar página</a>
-                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
-                </ul>
-            <li><a href="about.html">Acerca de</a>
-            <li><a href="server-mc.html">Servidor de Minecraft</a>
-            <li><a href="id-info.html">IDs de juegos
-            </a>
-            </li>
-        </ul>
+    <div style="font-family: Console; color: #000000; font-size: 1.75cm; text-align: center" draggable="true">
+        <br>
+        <p><b>Elije tu destino</b></p>
+        <br>
+        <a href="discord.html">
+            <button type="button" class="button-invite">Servidor de Discord</button>
+        </a>
+        <br>
+        <br>
+        <a href="about.html">
+            <button type="button" class="button-invite">Acerca de</button>
+        </a>
+        <br>
+        <br>
+        <a href="server-mc.html">
+            <button type="button" class="button-invite">Servidor de Minecraft(Java)</button>
+        </a>
+        <br>
+        <br>
+        <a href="id-info.html">
+            <button type="button" class="button-invite">IDs en juegos</button>
+        </a>
     </div>
-    <br>
-    <br>
-    <br>
-    <div style="align-content: center; text-align: center">
-        <p style="font-family: Console; font-style: inherit; font-size: 1.5cm;" draggable="true">Pulsa el botón para acceder al servidor de Discord</p>
-        <br>
-        <b style="font-family: Console; font-style: inherit; font-size: 1.5cm;" draggable="true">ADVERTENCIA</b>
-        <p style="font-family: Console; font-style: inherit; font-size: 1.5cm;" draggable="true">Si te unes al servidor sin haber sido admitido serás baneado permanentemente de este mismo</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div>
-            <style>
-                button {
-                    color: black;
-                    background-color: rgba(0, 0, 0, 0);
-                    transition: linear 0.25s 
-                }
-                button:hover {
-                    color: rgb(255, 255, 255);
-                    background-color:rgb(0, 0, 0)
-                }
-            </style>
-            <a onclick="openWindowCustom('https:/\/discord.com/invite/WTMTQgmXg6', 'Invitación', 'width=500px,height=800,left=450px')">
-                <button type="button" class="button-invite" style="font-size: 1.5cm; font-family: Console; outline: unset; border-radius: 25px;">Unirse al server</button>
-            </a>
-            <a onclick="openWindowCustom('https:/\/discord.com/widget?id=788084474943635458&theme=dark', 'Invitación', 'width=500px,height=800,left=450')">
-                <button type="button" class="button-invite" style="font-size: 1.5cm; font-family: Console; outline: unset; border-radius: 25px;">Widget del server</button>
-            </a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <script>
-            function openWindowText(text) {
-                var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
-                windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
-            }
+    <script>
+        function openWindowText(text) {
+            var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
+            windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+        }
 
-            function openWindowCustom(url, name, config) {
-                var windoww = window.open(`${url}`, `${name}`, `${config}`, true)
-            }
+        function openWindowCustom(url, name, config) {
+            var windoww = window.open(`${url}`, `${name}`, `${config}`, true)
+        }
 
-        </script>
-    </div>
-    </div>
+    </script>
     <br>
     <br>
     <br>
@@ -183,8 +166,10 @@
 <footer>
     <div class="rectangle-footer">
         <br>
-        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);;" draggable="true">Contacto</p>
-        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498 
+        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);;"
+            draggable="true">Contacto</p>
+        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b
+                draggable="true">Discord:</b> Mr. Mario#8498
             <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false">
         </p>
         <br>
